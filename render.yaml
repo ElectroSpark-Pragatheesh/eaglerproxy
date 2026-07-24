@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: donut-smp-proxy
+    runtime: node
+    repo: https://github.com
+    plan: free
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 8080
